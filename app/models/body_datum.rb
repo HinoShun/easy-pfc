@@ -1,0 +1,2 @@
+class BodyDatum < ApplicationRecord
+end
