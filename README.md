@@ -1,24 +1,26 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## アプリケーション名
+EASY-PFC
 
-Things you may want to cover:
+## アプリケーション概要（課題抽出と解決方法）
+### 目的
+かっこいい、美しい身体づくりをサポートするミニアプリケーション。  
+ダイエットする上で必要となるカロリー計算とおすすめとなる栄養素バランスを簡単に調べることができる。  
 
-* Ruby version
+## 利用方法
+1. フォームより、必要な身体情報を入力し、ボタンをクリックする
 
-* System dependencies
+## テーブル設計
 
-* Configuration
+### body_data テーブル
+| Column             | Type    | Options                  |
+| ------------------ | ------  |------------------------- |
+| height             | float   | null: false              |
+| weight             | float   | null: false              |
+| age                | integer | null: false              |
+| sex_id             | integer | null: false              |
+| target_date        | date    | null: false              |
+| target_weight      | float   | null: false              |
+| activity_level_id  | integer | null: false              |
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
