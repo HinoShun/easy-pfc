@@ -1,0 +1,44 @@
+<h1>new</h1>
+
+  <!-- 投稿フォーム -->
+  <%= form_with model:@body_datum, local: true do |f| %>
+  <%#= render "error/error_messages", model:@body_datum %>
+  
+  <div class="">
+    <%= f.text_field :height, class:"", placeholder:"身長を入力　例：165.0" %>
+  </div>
+
+  <div class="">
+    <%= f.text_field :weight, class:"", placeholder:"体重を入力　例：65.0" %>
+  </div>
+
+  <div class="">
+    <%= f.text_field :age, class:"", placeholder:"年齢を入力　例：35" %>
+  </div>
+
+  <div class="">
+    <%#= f.collection_select(:sex_id, Sex.all, :id, :name, {}, {class:""}) %>
+  </div>
+
+  <div class="">
+    <%#= f.collection_select(:activity_level_id, ActivityLevel.all, :id, :name, {}, {class:"select"}) %>
+  </div>
+  <!--
+  /活動レベルの説明 
+     処理
+  活動レベルの説明/
+  -->
+
+  <div class="">
+    <%= f.date_field :target_date, class:"" %>
+  </div>
+
+  <div class="">
+    <%= f.text_field :target_weight, class:"", placeholder:"目標体重を入力　例：60.0" %>
+  </div>
+
+  <div class="">
+    <%= f.submit "計算",class:"action-btn" %>
+  </div>
+
+  <% end %>
