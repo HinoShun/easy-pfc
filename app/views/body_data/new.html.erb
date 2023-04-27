@@ -4,7 +4,7 @@
 
     <!-- 投稿フォーム -->
     <%= form_with model:@body_datum, local: true do |f| %>
-    <%#= render "error/error_messages", model:@body_datum %>
+    <%= render "error/error_messages", model:@body_datum %>
   
       <div class="col">
         <label for="Height" class="form-label">身長</label>
