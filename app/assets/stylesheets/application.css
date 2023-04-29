@@ -17,11 +17,13 @@
 
 /* ヘッダー装飾 */
 .header{
+  width: 100%;
   height: 80px;
   background-color: black;
-  margin-bottom: 60px;
   display: flex;
   align-items: center;
+  position: fixed;
+  top: 0px;
 }
 
 .title{
@@ -31,4 +33,16 @@
   margin-left: 60px;
 }
 
-/* フッター装飾 */
+.top-m{
+  margin-top: 100px;
+}
+
+/* カスタム装飾 */
+
+.col_{
+  margin-top: 20px;
+}
+
+.btn-custom{
+  margin-top: 20px;
+}
