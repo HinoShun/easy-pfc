@@ -10,7 +10,6 @@ class BodyDataController < ApplicationController
     else
       render action: :new
     end
-    #ToDo:値変換?
   end
 
   private
