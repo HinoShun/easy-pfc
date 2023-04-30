@@ -3,7 +3,7 @@
   <div class="row top-m">
 
     <!-- 投稿フォーム -->
-    <%= form_with model:@body_datum, local: true do |f| %>
+    <%= form_with model:@body_datum,id: "form", local: true do |f| %>
     <%= render "error/error_messages", model:@body_datum %>
   
       <div class="col_">
@@ -47,7 +47,7 @@
       </div>
 
       <div class="col_">
-        <%= f.submit "計算",class:"btn btn-success rounded-pill btn-custom" %>
+        <%= f.submit "計算",class:"btn btn-success rounded-pill btn-custom", id: "submit" %>
       </div>
 
     <% end %>
