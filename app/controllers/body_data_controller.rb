@@ -4,13 +4,12 @@ class BodyDataController < ApplicationController
   end
 
   def create
-    body_datum = BodyDatum.new(body_datum_params)
-    render json:{ body_datum: body_datum }
-    # if @body_datum.save
-    #   redirect_to root_path
-    # else
-    #   render action: :new
-    # end
+    @body_datum = BodyDatum.new(body_datum_params)
+    #if @body_datum.valid?
+      render json:{ body_datum: @body_datum }
+    #else
+      #render action: :new
+    #end
   end
 
   private

@@ -59,7 +59,7 @@ function calculation (){
       const list = document.getElementById("list");
       list.insertAdjacentHTML("afterend", buildHTML(XHR));
 
-      //formText.value = "";
+      formText.value = "";
     };
   });
 }
