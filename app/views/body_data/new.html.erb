@@ -1,32 +1,32 @@
 <div class="container container-sm">
 
-  <div class="row top-m">
+  <div class="row" style="margin-top: 100px;">
 
     <!-- 投稿フォーム -->
     <%= form_with model:@body_datum,id: "form", local: true do |f| %>
     <%= render "error/error_messages", model:@body_datum %>
   
-      <div class="col_">
+      <div class="col-sm-4 mx-auto mt-3">
         <label for="Height" class="form-label">身長</label>
         <%= f.text_field :height, class:"form-control", id: "Height", placeholder:"例）165.0" %>
       </div>
 
-      <div class="col_">
+      <div class="col-sm-4 mx-auto mt-3">
         <label for="Weight" class="form-label">体重</label>
         <%= f.text_field :weight, class:"form-control", id: "Weight", placeholder:"例）65.0" %>
       </div>
 
-      <div class="col_">
+      <div class="col-sm-4 mx-auto mt-3">
         <label for="Age" class="form-label">年齢</label>
         <%= f.text_field :age, class:"form-control", id: "Age", placeholder:"例）35" %>
       </div>
 
-      <div class="col_">
+      <div class="col-sm-4 mx-auto mt-3">
         <label class="form-label">性別</label>
         <%= f.collection_select(:sex_id, Sex.all, :id, :name, {}, {class: "form-control"}) %>
       </div>
 
-      <div class="col_">
+      <div class="col-sm-4 mx-auto mt-3">
         <label class="form-label">活動レベル</label>
         <%= f.collection_select(:activity_level_id, ActivityLevel.all, :id, :name, {}, {class: "form-control"}) %>
       </div>
@@ -36,25 +36,25 @@
       活動レベルの説明/
       -->
 
-      <div class="col_">
+      <div class="col-sm-4 mx-auto mt-3">
         <label for="TargetDate" class="form-label">目標日</label>
         <%= f.date_field :target_date,id: "TargetDate", class:"form-control" %>
       </div>
 
-      <div class="col_">
+      <div class="col-sm-4 mx-auto mt-3">
         <label for="TargetWeight" class="form-label">目標体重</label>
         <%= f.text_field :target_weight,id: "TargetWeight", class:"form-control", placeholder:"例)60.0" %>
       </div>
 
-      <div class="col_">
-        <%= f.submit "計算",class:"btn btn-success rounded-pill btn-custom", id: "submit" %>
+      <div class="col-sm-4 mx-auto mt-3">
+        <%= f.submit "計算",class:"btn btn-success rounded-pill my-20", id: "submit" %>
       </div>
 
     <% end %>
 
     <!-- 計算結果の表示 -->
     
-    <div class = "list-wrap">
+    <div class = "col-sm-4 mx-auto my-3 py-3 list-wrap">
       <div id="list">
     </div>
 

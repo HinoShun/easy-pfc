@@ -33,24 +33,10 @@
   margin-left: 60px;
 }
 
-.top-m{
-  margin-top: 100px;
-}
-
 /* カスタム装飾 */
 
-.col_{
-  margin-top: 20px;
-}
-
-.btn-custom{
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
 
 .list-wrap{
-  margin-top: 40px;
-  margin-bottom: 40px;
   background-color:rgb(152, 237, 190);
   border: 1px gray solid;
   border-radius: 5px;
